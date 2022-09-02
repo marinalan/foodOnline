@@ -7287,6 +7287,7 @@ a.slicknav_btn.slicknav_open .slicknav_icon-bar:first-child {
 	display: inline-block;
 	vertical-align: middle;
 	width: 300px;
+	margin-left: 15px;
 }
 
 .main-location>ul {
@@ -11566,6 +11567,7 @@ foodbakery ki style.css mein footer k style k baad add karwin isy #footer.footer
 	display: none;
 }
 
+ul.errorlist li,
 #growls.foodbakery_element_growl .growl.growl-error {
 	color: #a94442;
 }
@@ -12156,15 +12158,6 @@ input[type="checkbox"].onoffswitch-checkbox {
 	line-height: 24px;
 }
 
-.alert {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: none;
-	text-align: left;
-	color: #fff;
-	padding: 2px 6px;
-	border-radius: 3px;
-}
 
 .footer-widget .widget-newsletter .fieldset {
 	position: relative;
