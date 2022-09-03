@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-	  'accounts.backends.EmailBackend',
+	  # 'accounts.backends.EmailBackend',
     "django.contrib.auth.backends.ModelBackend", # this line fixed my problem
 ]
 # Internationalization
