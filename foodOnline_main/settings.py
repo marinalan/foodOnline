@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 		'django.contrib.gis',
 
 		'accounts.apps.AccountsConfig',
+		'vendor.apps.VendorConfig',
 ]
 
 MIDDLEWARE = [
