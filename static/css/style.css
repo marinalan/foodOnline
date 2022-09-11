@@ -15756,3 +15756,9 @@ textarea#comment_mes {
 .main-search.fancy.bg-holder {
 	padding: 5px 5px 0 !important;
 }
+
+.upload-gallery input.btn.btn-info {
+	padding: 2px 1.75em;
+	font-size: 12px;
+	width: 100%;
+}

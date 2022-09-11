@@ -24,3 +24,10 @@
 	animation-duration: 8s;
 	z-index: 99;
 }
+
+.upload-gallery input.btn.btn-info {
+	padding: 2px 1.75em;
+	font-size: 12px;
+	width: 100%;
+	cursor: pointer;
+}
