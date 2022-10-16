@@ -18,23 +18,48 @@
 								<div class="user-holder">
 									<h5 class="text-uppercase">Build Your Food Menu</h5>
 								  <hr/>
+									<h6>Add New Food Item</h6>
 									<button class="btn btn-secondary mb-4" onclick="history.back()"><i class="fa fa-angle-left mr-1" aria-hidden="true"></i>Back</button>
 									<br/>
-									<h6>Add New Category</h6>
-									<form action="{% url 'add_category' %}" method="POST">
+									<form action="{% url 'add_food' %}" method="POST"
+									      enctype="multipart/form-data">
 										{% csrf_token %}
 										<div class="form-fields-set">
-											<div class="row">
+ 											<div class="row">
 												<div class="col-lg-12 col-md-12 col-sm-12">
 													<div class="field-holder">
-														<label for="">Category Name *</label>
-														{{form.category_name}}
+														<label for="">Food Title *</label>
+														{{form.food_title}}
+													</div>
+												</div>
+												<div class="col-lg-12 col-md-12 col-sm-12">
+													<div class="field-holder">
+														<label for="">Category *</label>
+														{{form.category}}
 													</div>
 												</div>
 												<div class="col-lg-12 col-md-12 col-sm-12">
 													<div class="field-holder">
 														<label for="">Description</label>
 														{{form.description}}
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12">
+													<div class="field-holder">
+														<label for="">Price *</label>
+														{{form.price}}
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12">
+													<div class="field-holder">
+														<label for="">Image</label>
+														{{form.image}}
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12">
+													<div class="field-holder">
+														<label for="">Is available?</label>
+														{{form.is_available}}
 													</div>
 												</div>
 											</div>
@@ -60,3 +85,4 @@
 		</div>
 		<!-- Main Section End -->
 {% endblock %}
+
